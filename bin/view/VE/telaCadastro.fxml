@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #1E1E2C;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaCadastroClienteController">
+   <children>
+      <Pane id="title_box" prefHeight="90.0" prefWidth="1000.0" style="-fx-background-color: #242636;">
+         <children>
+            <ImageView id="titulo" fitHeight="227.0" fitWidth="403.0" layoutX="310.0" layoutY="-67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <Button id="voltar" fx:id="voltar" alignment="CENTER" layoutX="1.0" layoutY="8.0" mnemonicParsing="false" onAction="#voltar" prefHeight="74.0" prefWidth="143.0" style="-fx-background-color: #242636; -fx-background-radius: 80;" text="Voltar" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Dubai Bold" size="30.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <TextField id="nomeLogin" fx:id="nomeLoginCadastro" alignment="CENTER" layoutX="170.0" layoutY="292.0" prefHeight="79.0" prefWidth="664.0" promptText="Nome de login" style="-fx-background-radius: 80;">
+         <font>
+            <Font name="Dubai Regular" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Button id="cadastrar" fx:id="cadastrar" alignment="CENTER" layoutX="395.0" layoutY="509.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="76.0" prefWidth="214.0" style="-fx-background-color: #242636; -fx-background-radius: 80;" text="Cadastrar" textFill="WHITE">
+         <font>
+            <Font name="Dubai Regular" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField id="nomeLogin" fx:id="senhaCadastro" alignment="CENTER" layoutX="170.0" layoutY="384.0" prefHeight="79.0" prefWidth="664.0" promptText="Senha" style="-fx-background-radius: 80;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="Dubai Regular" size="30.0" />
+         </font>
+      </TextField>
+      <TextField id="nomeLogin" fx:id="cpfCadastro" alignment="CENTER" layoutX="170.0" layoutY="201.0" prefHeight="79.0" prefWidth="664.0" promptText="CPF" style="-fx-background-radius: 80;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="Dubai Regular" size="30.0" />
+         </font>
+      </TextField>
+      <TextField id="nomeLogin" fx:id="nomeCadastro" alignment="CENTER" layoutX="170.0" layoutY="109.0" prefHeight="79.0" prefWidth="664.0" promptText="Nome" style="-fx-background-radius: 80;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="Dubai Regular" size="30.0" />
+         </font>
+      </TextField>
+      <Label id="erroAut" fx:id="usuCadastrado" alignment="CENTER" contentDisplay="CENTER" layoutX="285.0" layoutY="462.0" prefHeight="45.0" prefWidth="432.0" text="Usuário cadastrado com sucesso!" textFill="#00ff30" visible="false">
+         <font>
+            <Font name="Dubai Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

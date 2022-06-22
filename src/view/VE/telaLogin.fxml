@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #1E1E2C;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaLoginController">
+   <children>
+      <Pane id="title_box" prefHeight="90.0" prefWidth="1000.0" style="-fx-background-color: #242636;">
+         <children>
+            <ImageView fitHeight="227.0" fitWidth="403.0" layoutX="310.0" layoutY="-67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="174.0" layoutY="78.0" prefHeight="121.0" prefWidth="670.0" text="Conecte-se a sua criptodash" textFill="WHITE">
+         <font>
+            <Font name="Dubai Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label id="erroAut" fx:id="erroAut" alignment="CENTER" contentDisplay="CENTER" layoutX="284.0" layoutY="362.0" prefHeight="45.0" prefWidth="432.0" text="Login ou senha inválidos!" textFill="RED" visible="false">
+         <font>
+            <Font name="Dubai Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField id="login" fx:id="login" alignment="CENTER" layoutX="229.0" layoutY="189.0" prefHeight="79.0" prefWidth="559.0" promptText="Login" style="-fx-background-radius: 80;">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <PasswordField id="senha" fx:id="senha" alignment="CENTER" layoutX="227.0" layoutY="286.0" prefHeight="79.0" prefWidth="559.0" promptText="Senha" style="-fx-background-radius: 80;">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </PasswordField>
+      <Button id="entrar" fx:id="entrar" alignment="CENTER" contentDisplay="CENTER" layoutX="375.0" layoutY="415.0" mnemonicParsing="false" onAction="#autenticar" prefHeight="77.0" prefWidth="239.0" style="-fx-background-color: #242636; -fx-background-radius: 80;" text="Entrar" textFill="WHITE">
+         <font>
+            <Font name="Dubai Regular" size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="282.0" layoutY="524.0" text="Ainda não tem conta?" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="botaoToCadastrar" layoutX="537.0" layoutY="509.0" mnemonicParsing="false" onAction="#toCadastrar" prefHeight="75.0" prefWidth="244.0" style="-fx-background-color: none;" text="Cadastre-se" textFill="#fcbd00">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</Pane>

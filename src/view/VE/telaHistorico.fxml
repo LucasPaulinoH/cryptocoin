@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #1E1E2C;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaHistoricoController">
+   <children>
+      <Pane id="title_box" prefHeight="600.0" prefWidth="333.0" style="-fx-background-color: #242636;">
+         <children>
+            <Pane layoutY="302.0" prefHeight="93.0" prefWidth="333.0" style="-fx-background-color: #1E1E2C;" />
+            <ImageView fx:id="titulo" fitHeight="376.0" fitWidth="343.0" layoutX="-5.0" layoutY="-36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <Button id="mercado" fx:id="historicoMenu" layoutX="48.0" layoutY="302.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="232.0" style="-fx-background-color: none;" text="Histórico" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Bold" size="36.0" />
+               </font>
+            </Button>
+            <Button id="mercado" fx:id="mercadoMenu" layoutX="59.0" layoutY="209.0" mnemonicParsing="false" onAction="#toMercado" prefHeight="93.0" prefWidth="212.0" style="-fx-background-color: none;" text="Mercado" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="mercado" fx:id="converterMenu" layoutX="59.0" layoutY="116.0" mnemonicParsing="false" onAction="#toConversoes" prefHeight="93.0" prefWidth="212.0" style="-fx-background-color: none;" text="Converter" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="sair" layoutX="128.0" layoutY="522.0" mnemonicParsing="false" onAction="#sair" style="-fx-background-color: none;" text="Sair" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Bold" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <ChoiceBox fx:id="cripto" layoutX="762.0" layoutY="94.0" prefHeight="35.0" prefWidth="49.0" />
+      <Label layoutX="440.0" layoutY="23.0" text="Histórico de conversões" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Dubai Bold" size="45.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tabelaHistorico" layoutX="333.0" layoutY="152.0" prefHeight="378.0" prefWidth="668.0">
+        <columns>
+          <TableColumn fx:id="valor1" prefWidth="153.66668701171875" text="valor convertido ($)" />
+            <TableColumn fx:id="valor2" prefWidth="75.0" text="resultado" />
+            <TableColumn fx:id="criptomoeda" prefWidth="109.33331298828125" text="criptomoeda" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="535.0" layoutY="83.0" text="Escolha a moeda:" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Dubai Regular" size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="buscar" layoutX="827.0" layoutY="87.0" mnemonicParsing="false" onAction="#buscar" prefHeight="49.0" prefWidth="85.0" style="-fx-background-color: #242636; -fx-background-radius: 80;" text="buscar" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Dubai Bold" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

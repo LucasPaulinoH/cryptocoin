@@ -1,0 +1,36 @@
+{
+  // Use o IntelliSense para saber mais sobre os atributos possíveis.
+  // Focalizar para exibir as descrições dos atributos existentes.
+  // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Launch Teste",
+      "request": "launch",
+      "mainClass": "model.dao.Teste",
+      "projectName": "cryptocoin_2576b58f"
+    },
+    {
+      "type": "java",
+      "name": "Launch Teste(1)",
+      "request": "launch",
+      "mainClass": "model.vo.Teste",
+      "projectName": "cryptocoin_2576b58f"
+    },
+    {
+      "type": "java",
+      "name": "Launch Telas",
+      "request": "launch",
+      "mainClass": "view.Telas",
+      "projectName": "cryptocoin_2576b58f",
+      "vmArgs": "--module-path \"C:/Users/lucas/OneDrive/Documents/cryptocoin/cryptocoin/lib/javafx-sdk-18.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane id="background" fx:id="telaConversao" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #1E1E2C;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaConversoesController">
+   <children>
+      <Pane id="title_box" prefHeight="600.0" prefWidth="333.0" style="-fx-background-color: #242636;">
+         <children>
+            <Pane layoutY="116.0" prefHeight="93.0" prefWidth="333.0" style="-fx-background-color: #1E1E2C;" />
+            <ImageView fx:id="titulo" fitHeight="376.0" fitWidth="343.0" layoutX="-5.0" layoutY="-36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <Button id="mercado" fx:id="historicoMenu" layoutX="48.0" layoutY="302.0" mnemonicParsing="false" onAction="#toHistorico" prefHeight="93.0" prefWidth="232.0" style="-fx-background-color: none;" text="Histórico" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="mercado" fx:id="mercadoMenu" layoutX="59.0" layoutY="209.0" mnemonicParsing="false" onAction="#toMercado" prefHeight="93.0" prefWidth="212.0" style="-fx-background-color: none;" text="Mercado" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="mercado" fx:id="converterMenu" layoutX="59.0" layoutY="116.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="212.0" style="-fx-background-color: none;" text="Converter" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Bold" size="36.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Button id="entrar" fx:id="converter" alignment="CENTER" contentDisplay="CENTER" layoutX="585.0" layoutY="222.0" mnemonicParsing="false" onAction="#converter" prefHeight="67.0" prefWidth="168.0" style="-fx-background-color: #242636; -fx-background-radius: 80;" text="Converter" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Dubai Regular" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField id="valor" fx:id="valor" alignment="CENTER" layoutX="395.0" layoutY="122.0" prefHeight="77.0" prefWidth="452.0" promptText="Valor ($)" style="-fx-background-radius: 80;" visible="false">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <ChoiceBox fx:id="moedas" layoutX="882.0" layoutY="133.0" prefHeight="54.0" prefWidth="68.0" visible="false" />
+      <Label fx:id="resultMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="541.0" layoutY="326.0" text="&lt;Preco_convertido&gt;" textAlignment="CENTER" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Dubai Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="label1" layoutX="459.0" layoutY="23.0" text="Conversão de moedas" textAlignment="CENTER" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Dubai Bold" size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="sair1" layoutX="128.0" layoutY="522.0" mnemonicParsing="false" onAction="#sair" style="-fx-background-color: none;" text="Sair" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Dubai Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button id="entrar" fx:id="confirmar" alignment="CENTER" contentDisplay="CENTER" layoutX="868.0" layoutY="289.0" mnemonicParsing="false" onAction="#confirmar" prefHeight="40.0" prefWidth="91.0" style="-fx-background-color: #242636; -fx-background-radius: 80;" text="OK" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Dubai Regular" size="30.0" />
+         </font>
+      </Button>
+      <TextField id="valor" fx:id="nome" alignment="CENTER" layoutX="399.0" layoutY="287.0" prefHeight="77.0" prefWidth="452.0" promptText="Nome" style="-fx-background-radius: 80;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font size="30.0" />
+         </font>
+      </TextField>
+      <Label fx:id="label2" layoutX="416.0" layoutY="205.0" text="Confirme seu nome de usuário:" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Dubai Bold" size="38.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
