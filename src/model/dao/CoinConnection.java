@@ -9,7 +9,6 @@ import org.jsoup.nodes.Document;
 import model.vo.Lista;
 import model.vo.MoedaVO;
 
-/* não alterar mais */
 public class CoinConnection {
   public final String url = "https://crypto.com/price";
   public Lista<MoedaVO> listaRS = conectar();
